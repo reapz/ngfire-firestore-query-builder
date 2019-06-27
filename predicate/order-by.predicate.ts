@@ -3,7 +3,7 @@ import { Predicate } from "./predicate";
 
 export class OrderByPredicate extends Predicate {
 
-  constructor(private _fieldName, private _order: 'asc' | 'desc') {
+  constructor(private _fieldName: string, private _order: 'asc' | 'desc') {
     super('orderBy');
   }
 
