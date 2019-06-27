@@ -1,2 +1,3 @@
 
-export * from './query.model';
+export * from './query';
+export * from './predicate';

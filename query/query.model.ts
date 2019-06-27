@@ -1,9 +1,9 @@
 import { Query as FirestoreQuery, CollectionReference } from '@firebase/firestore-types';
 
-import { Predicate } from './predicate/predicate';
-import { WherePredicate } from './predicate/where.predicate';
-import { OrderByPredicate } from './predicate/order-by.predicate';
-import { LimitPredicate } from './predicate/limit.predicate';
+import { Predicate } from '../predicate/predicate.interface';
+import { WherePredicate } from '../predicate/where.predicate';
+import { OrderByPredicate } from '../predicate/order-by.predicate';
+import { LimitPredicate } from '../predicate/limit.predicate';
 
 export class Query {
 
