@@ -1,6 +1,6 @@
 {
   "name": "ngfire-firestore-query-builder",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Interfaces, Types & Contracts shared between Firebase and Angular X, needed to make the interactions between both front- and back-end work.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
