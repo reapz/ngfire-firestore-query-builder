@@ -1,6 +1,6 @@
 import { Query as FirestoreQuery } from '@firebase/firestore-types';
 
-export type PredicateType = 'where' | 'and' | 'orderBy' | 'limit';
+export type PredicateType = 'where' | 'and' | 'orderBy' | 'limit' | 'min' | 'max';
 
 export abstract class Predicate {
 

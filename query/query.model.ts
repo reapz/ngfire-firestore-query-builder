@@ -4,6 +4,8 @@ import { Predicate } from '../predicate/predicate.interface';
 import { WherePredicate } from '../predicate/where.predicate';
 import { OrderByPredicate } from '../predicate/order-by.predicate';
 import { LimitPredicate } from '../predicate/limit.predicate';
+import { MaxPredicate } from '../predicate/max.predicate';
+import { MinPredicate } from '../predicate/min.predicate';
 
 export class Query {
 
@@ -43,6 +45,20 @@ export class Query {
    */
   limit(n: number) {
     this._addPredicate(new LimitPredicate(n));
+
+    return this;
+  }
+
+  /** Get (n?) record(s) with last value for fieldName */
+  max(fieldName: string, n?: number) {
+    this._addPredicate(new MaxPredicate(fieldName, n));
+
+    return this;
+  }
+
+  /** Get (n?) record(s) with first value for fieldName */
+  min(fieldName: string, n?: number) {
+    this._addPredicate(new MinPredicate(fieldName, n));
 
     return this;
   }
