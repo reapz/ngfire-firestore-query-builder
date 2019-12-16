@@ -1,15 +1,18 @@
 {
   "name": "ngfire-firestore-query-builder",
-  "version": "1.0.11",
+  "version": "1.0.14",
   "description": "Interfaces, Types & Contracts shared between Firebase and Angular X, needed to make the interactions between both front- and back-end work.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
     "ngfire-shared": "^1.0.4"
   },
+  "scripts": {
+    "build": "tsc"
+  },
   "peerDependencies": {
-    "@firebase/app-types": "^0.x",
-    "@firebase/firestore-types": "^1.4.1"
+    "@firebase/app-types": "^0.5.0",
+    "@firebase/firestore-types": "^1.9.0"
   },
   "files": [
     "index.ts",
@@ -20,5 +23,8 @@
     "url": "git+https://github.com/elewa-company/ngfire-firestore-query-builder.git"
   },
   "author": "JRosseel",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.7.3"
+  }
 }
