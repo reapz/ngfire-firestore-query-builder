@@ -1,14 +1,13 @@
-import { Query as FirestoreQuery } from '@firebase/firestore-types';
-import { Predicate } from "./predicate.interface";
+import { firestore } from 'firebase-admin';
+
+import { Predicate } from './predicate.interface';
 
 export class LimitPredicate extends Predicate {
-
   constructor(private _n: number) {
     super('limit');
   }
 
-  build(query: FirestoreQuery): FirestoreQuery {
+  build<T>(query: firestore.Query<T>): firestore.Query<T> {
     return query.limit(this._n);
   }
-
 }
