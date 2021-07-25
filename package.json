@@ -10,8 +10,8 @@
 	"firebase-admin": "^9.8.0"
   },
   "scripts": {
-    "build": "tsc",
-	"postinstall": "tsc --outDir ./dist"
+    "build": "tsc --outdir dist",
+	"postinstall": "npm run build"
   },
   "files": [
     "index.ts",
