@@ -10,8 +10,8 @@
 	"firebase-admin": "^9.8.0"
   },
   "scripts": {
-    "build": "tsc --outdir dist",
-	"postinstall": "npm run build"
+    "build": "tsc --outdir ./dist",
+	"postinstall": "cd node_modules/ngfire-firestore-query-builder && tsc --outdir ./dist"
   },
   "files": [
     "index.ts",
